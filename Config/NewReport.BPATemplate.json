@@ -1,0 +1,23 @@
+{
+  "name": "Authentication Policy Migration State",
+  "style": "Table",
+  "Fields": [
+    {
+      "name": "policyMigrationState",
+      "UseExistingInfo": false,
+      "FrontendFields": [
+        {
+          "name": "MigrationStatus",
+          "value": "policyMigrationState",
+          "formatter": "string"
+        }
+      ],
+      "StoreAs": "JSON",
+      "API": "Graph",
+      "ExtractFields": [
+        "policyMigrationState"
+      ],
+      "URL": "https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/"
+    }
+  ]
+}
